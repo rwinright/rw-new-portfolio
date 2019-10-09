@@ -1,7 +1,7 @@
 .Home{
   height: 100vh;
-  width: calc(100% - 80px);
-  padding-left: 80px;
+  width: calc(100% - 100px);
+  padding-left: 100px;
   background-color: #586BA4;
   img{
     opacity: 0.1;
@@ -9,8 +9,8 @@
     height: auto;
     min-height: 100vh;
     max-height: 100vh;
-    min-width: calc(100% - 80px);
-    max-width: calc(100% - 80px);
+    min-width: calc(100% - 100px);
+    max-width: calc(100% - 100px);
   }
   .content-container{
     height: 100%;
