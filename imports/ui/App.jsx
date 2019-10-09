@@ -1,13 +1,13 @@
 import React from 'react'
-import Nav from './Components/Nav/Nav';
-import Home from './Home/Home';
+import Nav from './Components/Nav/Nav.jsx';
+import Home from './Home/Home.jsx';
 
-const App = () => (
-  <>
-    <Nav/>
-    <Home/>
-    <Home/>
-  </>
-);
+export default function App() {
+  return (
+    <>
+      <Nav />
+      <Home />
+    </>
+  )
+}
 
-export default App;

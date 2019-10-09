@@ -3,7 +3,11 @@
   width: calc(100% - 80px);
   padding-left: 80px;
   background-color: #586BA4;
-  content-container{
+  img{
+    opacity: 0.1;
+    position: absolute;
+  }
+  .content-container{
     height: 100%;
     width: 100%;
     display: flex;
