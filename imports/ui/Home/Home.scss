@@ -3,6 +3,9 @@
   width: calc(100% - 100px);
   padding-left: 100px;
   background-color: #586BA4;
+  .typed-cursor{
+    display: none;
+  }
   img{
     opacity: 0.1;
     position: absolute;

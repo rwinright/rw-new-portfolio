@@ -12,7 +12,8 @@
     "meteor-node-stubs": "^0.4.1",
     "node-sass": "^4.12.0",
     "react": "^16.5.0",
-    "react-dom": "^16.5.0"
+    "react-dom": "^16.5.0",
+    "typed.js": "^2.0.11"
   },
   "meteor": {
     "mainModule": {
