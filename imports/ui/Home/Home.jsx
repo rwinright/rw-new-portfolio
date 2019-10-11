@@ -8,9 +8,9 @@ const Home = (props) => {
   useEffect(() => {
     
     const options = {
-      strings: ['<h1>Hello, my name is Roger Winright</h1>', '<h1>I like to build cool stuff on the Internet.</h1>'],
-      smartBackspace: true,
-      typeSpeed: 40
+      strings: ['<h1>Hello, my name is <span id="name">Roger</span></h1>', '<h1>I like to build cool stuff on the Internet.</h1>'],
+      smartBackspace: false,
+      typeSpeed: 60
     };
 
     typed = new Typed('.typed', options)

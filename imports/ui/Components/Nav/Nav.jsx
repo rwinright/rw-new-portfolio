@@ -24,7 +24,7 @@ export default Nav = (props) => {
           </div>
         </li>
         <li>
-          <div className="nav-container">
+          <div className="nav-container" onClick={() => scrollToRef(props.mobileRef)}>
             <span>H</span>
           </div>
         </li>

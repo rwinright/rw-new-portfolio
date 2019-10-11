@@ -2,7 +2,7 @@
   height: 100vh;
   width: calc(100% - 100px);
   padding-left: 100px;
-  background-color: #586BA4;
+  background-color: $blue;
   .typed-cursor{
     display: none;
   }
@@ -22,5 +22,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    #name{
+      color: $green;
+    }
   }
 }
