@@ -13,6 +13,9 @@ body{
   h1{
     font-family: $geo-font;
     margin: 0;
+    span{
+      color: $green;
+    }
   }
   h2{
     font-family: $miriam-font;

@@ -6,7 +6,7 @@ const Mobile = (props) => {
     <div className="Mobile" ref={props.mobileRef}>
       <img src='https://rw-portfolio.s3.us-east-2.amazonaws.com/code.jpg' alt="code background" />
       <div className="content-container">
-        <h1>Mobile Component</h1>
+        <h1><span>Mobile </span>Component</h1>
         <div className="gallery">
 
         </div>
@@ -15,7 +15,7 @@ const Mobile = (props) => {
             <span>{'<'}</span>
           </div>
           <div className="control-title">
-
+            <h2>Sample App</h2>
           </div>
           <div className="control-arrow">
             <span>{'>'}</span>
