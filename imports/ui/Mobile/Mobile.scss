@@ -19,5 +19,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .gallery{
+      height: 500px;
+      width: 22vw;
+      border-radius: 8px;
+      background-color: $dark-purple;
+      padding: 18px;
+      margin: 14px 0px;
+    }
+    .gallery-controls{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 60vw;
+      .control-arrow{
+        border: 2px solid red;
+        color: red;
+        height: 3em;
+        width: 3em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 }
