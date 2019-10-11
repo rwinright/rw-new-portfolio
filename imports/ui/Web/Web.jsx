@@ -15,7 +15,7 @@ const Web = (props) => {
             <span>{'<'}</span>
           </div>
           <div className="control-title">
-
+            <h2>Sample Website</h2>
           </div>
           <div className="control-arrow">
             <span>{'>'}</span>
