@@ -4,6 +4,8 @@ import Home from './Home/Home.jsx';
 import Web from './Web/Web.jsx';
 import Mobile from './Mobile/Mobile.jsx';
 import Game from './Game/Game.jsx';
+import About from './About/About.jsx';
+import Contact from './Contact/Contact.jsx';
 
 export default function App() {
 
@@ -12,14 +14,18 @@ export default function App() {
   const webRef = useRef(document.getElementsByClassName("Web"))
   const mobileRef = useRef(document.getElementsByClassName("Mobile"))
   const gameRef = useRef(document.getElementsByClassName("Game"))
+  const aboutRef = useRef(document.getElementsByClassName("About"))
+  const contactRef = useRef(document.getElementsByClassName("Contact"))
 
   return (
     <>
-      <Nav homeRef={homeRef} webRef={webRef} mobileRef={mobileRef} gameRef={gameRef}/>
+      <Nav homeRef={homeRef} webRef={webRef} mobileRef={mobileRef} gameRef={gameRef} aboutRef={aboutRef} contactRef={contactRef}/>
       <Home homeRef={homeRef} />
       <Web webRef={webRef} />
       <Mobile mobileRef={mobileRef}/>
       <Game gameRef={gameRef}/>
+      <About aboutRef={aboutRef}/>
+      <Contact contactRef={contactRef}/>
     </>
   )
 }
