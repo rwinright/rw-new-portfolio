@@ -11,17 +11,20 @@
 @import '../imports/ui/Components/Nav/Nav.scss';
 
 //Global styles
-body{
-  margin: 0;
-  h1{
-    font-family: $geo-font;
+html{
+  scroll-behavior: smooth;
+  body{
     margin: 0;
-    span{
-      color: $green;
+    h1{
+      font-family: $geo-font;
+      margin: 0;
+      span{
+        color: $green;
+      }
     }
-  }
-  h2{
-    font-family: $miriam-font;
-    margin: 0;
+    h2{
+      font-family: $miriam-font;
+      margin: 0;
+    }
   }
 }

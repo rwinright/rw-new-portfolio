@@ -17,7 +17,7 @@ export default function App() {
   const aboutRef = useRef(document.getElementsByClassName("About"))
   const contactRef = useRef(document.getElementsByClassName("Contact"))
 
-  const refList = [homeRef, webRef, mobileRef, gameRef, aboutRef, contactRef];
+  const refList = [homeRef, webRef, mobileRef, gameRef, aboutRef, contactRef]; 
   const [active, setActive] = useState(homeRef.current);
 
   const setActiveRef = (ref) => {
