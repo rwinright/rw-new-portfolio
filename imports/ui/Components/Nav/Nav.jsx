@@ -12,14 +12,22 @@ export default Nav = (props) => {
     return refScrollHeightInfo
   }
 
-  compareScrollRef = (scrollPos, refList) => {
-    switch(scrollPos){
-      case scrollPos === refList[0]/2:
-        // scrollToRef(ref[0])
-        console.log("matched up")
-      break;
-      default:
-        break;
+  compareScrollRef = (scrollPos, refData) => {
+    if(scrollPos === refData[1]){
+      scrollToRef(props.refList[1]);
+      console.log(refData[1])
+    } else if(scrollPos === refData[2]){
+      scrollToRef(props.refList[2]);
+      console.log(refData[2])
+    } else if(scrollPos === refData[3]){
+      scrollToRef(props.refList[3]);
+      console.log(refData[3])
+    } else if(scrollPos === refData[4]){
+      scrollToRef(props.refList[4]);
+      console.log(refData[4])
+    } else if(scrollPos === refData[5]){
+      scrollToRef(props.refList[5]);
+      console.log(refData[5])
     }
   }
   
