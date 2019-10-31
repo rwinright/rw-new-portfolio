@@ -18,11 +18,15 @@ export default function App() {
   const contactRef = useRef(document.getElementsByClassName("Contact"))
 
   const refList = [homeRef, webRef, mobileRef, gameRef, aboutRef, contactRef];
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState(homeRef.current);
+
+  const setActiveRef = (ref) => {
+    setActive(ref);
+  }
 
   return (
     <>
-      <Nav activeRef={active} refList={refList} setActiveRef={setActive}/>
+      <Nav activeRef={active} refList={refList} setActiveRef={setActiveRef}/>
       <Home homeRef={homeRef} />
       <Web webRef={webRef} />
       <Mobile mobileRef={mobileRef} />
