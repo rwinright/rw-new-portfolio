@@ -33,9 +33,9 @@
         justify-content: center;
         align-items: center;
         font-size: 3em;
-        color: red;
+        color: $red;
         &.active{
-          color: green;
+          color: $green;
         }
         cursor: pointer;
         &:hover{
