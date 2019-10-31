@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import Nav from './Components/Nav/Nav.jsx';
 import Home from './Home/Home.jsx';
 import Web from './Web/Web.jsx';
@@ -17,15 +17,18 @@ export default function App() {
   const aboutRef = useRef(document.getElementsByClassName("About"))
   const contactRef = useRef(document.getElementsByClassName("Contact"))
 
+  const refList = [homeRef, webRef, mobileRef, gameRef, aboutRef, contactRef];
+  const [active, setActive] = useState(null);
+
   return (
     <>
-      <Nav homeRef={homeRef} webRef={webRef} mobileRef={mobileRef} gameRef={gameRef} aboutRef={aboutRef} contactRef={contactRef}/>
+      <Nav activeRef={active} refList={refList} setActiveRef={setActive}/>
       <Home homeRef={homeRef} />
       <Web webRef={webRef} />
-      <Mobile mobileRef={mobileRef}/>
-      <Game gameRef={gameRef}/>
-      <About aboutRef={aboutRef}/>
-      <Contact contactRef={contactRef}/>
+      <Mobile mobileRef={mobileRef} />
+      <Game gameRef={gameRef} />
+      <About aboutRef={aboutRef} />
+      <Contact contactRef={contactRef} />
     </>
   )
 }
